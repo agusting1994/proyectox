@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication4.Datos.curso>
+
+@{
+    ViewBag.Title = "Compra";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<h2>Compra</h2>
+<br />
+<h1>@ViewBag.aut</h1>
+
+<FORM target=_blank action="https://www.cuentadigital.com/api.php" METHOD="get" class="form">
+    <table class="table-responsive" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="table1">
+        <input type="hidden" value="617358" name="id">
+        <input type="hidden" value="7" name="venc">
+        <tr>
+            <td width="180">Nombre y Apellido:</td>
+            <td><input type="text" name="codigo"></td>
+        </tr>
+
+        <tr>
+            <td width="180">Precio:</td>
+            <td><input type="text" name="precio"></td>
+        </tr>
+        <tr>
+            <td width="180">E-Mail:</td>
+            <td><input type="text" name="hacia"></td>
+        </tr>
+        <tr>
+            <td width="180">Concepto:</td>
+            <td><input type="text" name="concepto"></td>
+        </tr>
+        <tr>
+            <td width="180">
+                <input type="submit" value="Comprar">
+            </td>
+            <td> </td>
+        </tr>
+    </table>
+</FORM>
+

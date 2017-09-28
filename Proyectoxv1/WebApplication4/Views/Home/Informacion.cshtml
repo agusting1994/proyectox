@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WebApplication4.Datos.curso>
+
+@{
+    ViewBag.Title = "Informacion";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+<link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Home/ventas_estilos.css" rel="stylesheet" />
+<link href="~/Content/Home/estilos_provisiorios.css" rel="stylesheet" />
+<br />
+@{ 
+    foreach (var item in Model)
+    {
+
+    }
+}
+
+<div class="container">
+    <div class="row"><h1 class="text-center animated bounceOutLeft"></h1> <br /> </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="#">
+                    <img src="http://www.ucc.edu.ar/archivos/imagenes/ICDA/logo-ICDA-nvo-web-OK.png" />
+                </a>
+                <div class="card-content">
+                    <h4 class="card-title">
+                        Valor del curso: $2989
+                    </h4>
+                </div>
+                <div class="card-read-more_inscripcion">
+                    <a class="btn btn-link btn-block" id="btnConfirm" href="#">
+                        INSCRIBITE Y PROBALO, GRATIS!
+                    </a>
+                </div>
+                <div class="card-read-more_compra">
+                    <a class="btn btn-link btn-block" href="#">
+                        COMPRAR AHORA
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <h3 class="informacion_titlo">Descripción del curso</h3>
+            <p>En este curso, aprenderás a interactuar con fluidez en conversaciones de contextos laborales, académicos o culturales y adquirirás recursos lingüísticos y comunicativos que te ayudarán a desenvolverte de manera eficaz en tus situaciones comunicativas diarias.
+                En este curso, aprenderás a interactuar con fluidez en conversaciones de contextos laborales, académicos o culturales y adquirirás recursos lingüísticos y comunicativos que te ayudarán a desenvolverte de manera eficaz en tus situaciones comunicativas diarias</p>
+            <h2>Adquiriendo este curso recibirás:</h2>
+            <div class="texto-verde">
+              
+                <ol>
+                    <li>Acceso a nuestra plataforma</li>
+                    <li>Modelos de examenes</li>
+                    <li>Atencion personalizada</li>
+                </ol>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default c_pointer">
+                    <div class="panel-heading btn-info " data-toggle="collapse" href="#collapse1">
+                        <h4 class="panel-title">
+                            <span>Métodos de pago</span> 
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                
+                                <li>En efectivo, personalmente en la academia</li>
+                                <li>Al contado en Pago fácil, Cobro Express, Rapipago, blabla mediante un cupon de pago</li>
+                                <li>En cuotas con tarjetas
+                                <ul><li>Naranja</li>
+                                    <li>Mastercard</li>
+                                    <li>Visa</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">Tenés alguna duda? <a href="#">contáctate con nosotros</a> </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/Scripts/Home/homescript.js"></script>
